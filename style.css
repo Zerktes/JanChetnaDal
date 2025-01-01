@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  
+  .center {
+    font-size: 72px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-align: center;
+  }
+  
+  
+  .join-button {
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    color: transparent;
+    border: 2px solid #fdbb2d;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+  }
+  
+  .join-button:hover {
+    background: linear-gradient(90deg, #fdbb2d, #b21f1f, #1a2a6c);
+    transform: scale(1.1);
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+  }

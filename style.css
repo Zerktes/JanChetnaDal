@@ -239,7 +239,7 @@ body, html {
 }
 
 .donation-form input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #fdbb2d;
@@ -270,7 +270,7 @@ body, html {
 
 
 .qr-section {
-  margin-top: 20px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -284,4 +284,11 @@ body, html {
   height: 150px;
   border: 2px solid #fdbb2d;
   border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 100px;
+  align-items: flex-start;
 }

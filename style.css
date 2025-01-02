@@ -76,3 +76,212 @@ body, html {
     color: #fff;
     -webkit-text-fill-color: #fff;
   }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fdbb2d;
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #fdbb2d;
+}
+
+/* Hamburger Menu (For Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.donate-button {
+  position: fixed;
+  top: 120px; /* Below the header */
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  border: 2px solid transparent;
+  border-image: linear-gradient(90deg, #fdbb2d, #b21f1f, #1a2a6c);
+  border-image-slice: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+  animation: shine 2s infinite linear;
+  z-index: 20;
+}
+
+.donate-button:hover {
+  color: #fdbb2d;
+  background: linear-gradient(90deg, #fdbb2d, #b21f1f, #1a2a6c);
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 5px #fdbb2d, 0 0 10px #fdbb2d, 0 0 15px #fdbb2d;
+  }
+  50% {
+    box-shadow: 0 0 10px #b21f1f, 0 0 20px #b21f1f, 0 0 25px #b21f1f;
+  }
+  100% {
+    box-shadow: 0 0 5px #1a2a6c, 0 0 10px #1a2a6c, 0 0 15px #1a2a6c;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .donate-button {
+    top: 100px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-button {
+    top: 120px;
+    right: 5px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+
+.donation-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+.donation-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.donation-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.donation-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fdbb2d;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.donation-form input::placeholder {
+  color: #aaa;
+}
+
+.donation-form .submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.donation-form .submit-button:hover {
+  background: linear-gradient(90deg, #fdbb2d, #b21f1f, #1a2a6c);
+}
+
+
+.qr-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-section h3 {
+  margin-bottom: 10px;
+  color: #fdbb2d;
+}
+
+.qr-section .qr-code {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fdbb2d;
+  border-radius: 10px;
+}

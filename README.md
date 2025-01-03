@@ -98,10 +98,10 @@ We welcome contributions to improve this project! Here's how you can contribute:
 For major changes, please open an issue to discuss what you would like to change.
 
 ---
+<!-- ADD MIT LICENSE to repository then, uncomment below code. -->
+<!-- vide## License
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code, provided proper credit is given.
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the code, prod proper credit is given. -->
 
 ---
 

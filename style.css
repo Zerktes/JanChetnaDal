@@ -292,3 +292,8 @@ body, html {
   gap: 100px;
   align-items: flex-start;
 }
+
+.nav-menu li a.active {
+  color: #fdbb2d;
+  font-weight: bold;
+}
